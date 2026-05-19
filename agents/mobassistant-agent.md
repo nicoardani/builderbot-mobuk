@@ -146,5 +146,4 @@ Per GMCP v1.9 Master List (Eyewear vertical, UK column):
 |----------|------|
 | UK Risk Onboarding Playbook | [Google Doc](https://docs.google.com/document/d/1dsQncH25YuO8dBJX7kbiFrp0ZkLbyvXYtBaE55mVN8g/edit) |
 | Global Merchant Category Policy v1.9 | [Google Doc](https://docs.google.com/document/d/1czVBuCVU40WQy0fuVDR-1NbZINtv27nPElVu_TQXEkM/edit) |
-| Master List and Rating of Verticals & Attributes | [Google Sheet](https://docs.google.com/spreadsheets/d/1kXgzfuWLMc1quEt0laVqmi8ecwJkG7KMGslM1EdulGU/edit) |
-| UK SMB Onboarding Support Channel Context | [Google Doc](https://docs.google.com/document/d/1JTGIlL0hQ7PQdeK-y4BH6EAVIfxsnt3JfQbrEyFBIQI/edit) |
+| Master List and Rating of Verticals & Attributes | [Google Sheet](https://docs.google.com/spreadsheets/d/1kXgzfuWLMc1quEt0laVqmi8ecwJkG7KMGslM1EdulGU/edit)

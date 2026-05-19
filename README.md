@@ -82,6 +82,10 @@ Slack Canvas agents for the Merchant Onboarding UK (Clearpay) team.
 - Rounds holding percentage up to the nearest 5% increment.
 - Selects the admin portal reason code based on the share of orders outside 14 days, or uses category-specific codes when specified.
 
+**Reference sheets:**
+- [Rolling Reserve Calculator Reference Sheet 1](https://docs.google.com/spreadsheets/d/12zIPRVMvb4wbwLXhRq8s_3cOJU1izeA9VlCyOIkkpRE/edit?gid=0#gid=0)
+- [Rolling Reserve Calculator Reference Sheet 2](https://docs.google.com/spreadsheets/d/1T10SsH0d4t23QShlhrGGDIJTxnIR31eB2KOAqLVSX04/edit?gid=0#gid=0)
+
 ## Team
 
 Merchant Onboarding (UK) Clearpay

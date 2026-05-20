@@ -8,6 +8,7 @@ Slack Canvas agents for the Merchant Onboarding UK (Clearpay) team.
 |-------|------|-------------|
 | Fetch Agent | `agents/fetch-agent.md` | Retrieves Trustpilot profile data, domain WHOIS age details, and fulfilment timeframe assessments for a supplied domain or URL. |
 | Merchant Onboarding BuilderBot Assistant | `agents/mobassistant-agent.md` | Provides UK Clearpay Merchant Onboarding second-opinion support on verticals, business attributes, risk ratings, policy rules, required reviews, and escalation paths. |
+| POI Document Analyser | `agents/poi-document-analyser-agent.md` | Analyses merchant-submitted Proof of Inventory documents against POI requirements, dropshipping indicators, document validity, and suspicious inventory signals. |
 | Rolling Reserve Calculator | `agents/rolling-reserve-calculator.md` | Extracts delivery/fulfilment breakdowns from merchant response images and calculates rolling reserve days, holding percentage, and admin portal reason code. |
 
 ## Usage
@@ -61,6 +62,26 @@ Slack Canvas agents for the Merchant Onboarding UK (Clearpay) team.
 - Common UK prohibited and approved categories.
 - Special cases including invasive beauty, pharmacies, eyewear, consumer electronics, ticketing, travel, and services.
 - Risk contacts and escalation rules.
+
+## POI Document Analyser
+
+**File:** `agents/poi-document-analyser-agent.md`
+
+**Input:** A merchant-submitted Proof of Inventory document, such as a supplier invoice, purchase order with confirmed delivery, raw materials invoice, wholesale receipt, or manufacturing/production order.
+
+**Returns:**
+- Whether the POI document meets the requirements communicated to the merchant.
+- A structured checklist covering document date, multiple items, delivery address, contact/business name, stock volumes, and document type.
+- Dropshipping concern level and supporting indicators.
+- Other suspicious indicators, such as tampering, mismatched details, prohibited/restricted goods, unrealistic volumes, missing supplier details, currency mismatch, or delivery-address mismatch.
+- A final POI decision or recommended next action.
+
+**Key validation behaviour:**
+- Immediately declines where the document mentions dropshipping or variations such as `drop shipping`, `drop-shipping`, `dropship`, or `drop ship`.
+- Checks that the document is dated within the past 3 months.
+- Confirms multiple items, delivery address, contact/business name, and stock volumes are visible.
+- Accepts raw material invoices where they otherwise meet the POI requirements.
+- Flags unacceptable document types such as shopping-cart screenshots, quotes/estimates, self-generated invoices, bank statements alone, and delivery notes without pricing or stock volumes.
 
 ## Rolling Reserve Calculator
 
